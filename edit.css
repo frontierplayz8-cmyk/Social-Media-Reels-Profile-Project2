@@ -1,0 +1,279 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+}
+
+body {
+  background-color: #111;
+}
+
+i {
+    font-size: 28px;
+    position: absolute;
+    left: 4%;
+    top: 4%;
+}
+
+main {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: drop-shadow(10px 10px 15px #2354);
+}
+
+.container {
+  margin-top: 15px;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #32653246;
+  border-radius: 50px;
+  filter: drop-shadow(5px 5px 15px #2354);
+  padding: 50px 0;
+}
+
+ri-arrow-left-long-line a {
+  text-decoration: none;
+}
+
+.container h1 {
+  text-transform: capitalize;
+  font-weight: 900;
+  font-size: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.change-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+input[type="file"] {
+  width: 400px;
+  background-color: #111;
+  border-radius: 40px;
+  border: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+input[type="file"]::file-selector-button {
+  background-color: #32653246;
+  border: none;
+  height: 300px;
+  width: 100%;
+  font-size: 25px;
+  border-radius: 40px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.image {
+  height: 300px;
+  width: 400px;
+  border-radius: 40px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.image img {
+  height: 100%;
+  width: 100%;
+  border-radius: 40px;
+  object-fit: cover;
+}
+
+.form-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 35px;
+}
+
+.display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 150px;
+  flex-wrap: wrap;
+}
+
+.display h2 {
+  font-size: 24px;
+  opacity: 0.6;
+}
+
+.display input {
+  height: 50px;
+  width: 300px;
+  background-color: #111;
+  border: none;
+  padding-left: 20px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+.bio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 267px;
+  flex-wrap: wrap;
+}
+
+.bio h2 {
+  font-size: 24px;
+  opacity: 0.6;
+}
+
+.bio input {
+  height: 50px;
+  width: 300px;
+  background-color: #111;
+  border: none;
+  padding-left: 20px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+.username {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 190px;
+  flex-wrap: wrap;
+}
+
+.username h2 {
+  font-size: 24px;
+  opacity: 0.6;
+}
+
+.username input {
+  height: 50px;
+  width: 300px;
+  background-color: #111;
+  border: none;
+  padding-left: 20px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 50px;
+}
+
+button {
+  height: 60px;
+  width: 200px;
+  color: #111;
+  font-size: 26px;
+  font-weight: 900;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 95%;
+    border-radius: 25px;
+    padding: 30px 0;
+  }
+
+  .change-image {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  input[type="file"] {
+    width: 90%;
+  }
+
+  .image {
+    width: 90%;
+    height: auto;
+  }
+
+  .display {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .bio {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .username {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  buttons {
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  button {
+    width: 40%;
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .container {
+    width: 80%;
+  }
+
+  .change-image {
+    gap: 50px;
+  }
+
+  .display {
+    gap: 150px;
+  }
+
+  .username {
+    gap: 150px;
+  }
+
+  .bio {
+    gap: 150px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .container {
+    width: 60%;
+  }
+}
